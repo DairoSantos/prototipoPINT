@@ -1,0 +1,22 @@
+console.log("probando prototipo");
+console.log("instalacion de modulos: express , readline-sync, nodemon -D");
+console.log("Probando nodemon");
+
+
+const express = require("express");
+const app = express();
+
+app.set("port", process.env.PORT || 8080);
+
+//Routes
+app.use(require("./routes/index"));
+
+
+//Inciando el server
+app.listen(app.get("port"), function() {
+    console.log("Hola desde el puerto " + app.get("port"));
+});
+
+
+
+

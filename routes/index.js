@@ -9,7 +9,7 @@ router.get("/rutaGetConRouter",  (req,res) => {
 
 
 router.get("/rutaGet", (req, res) => {
-    res.send("hola desde una web llamada en el servidor");
+    res.send("hola mundo desde el servidor");
 });
 
 router.get("/0", (req, res) => {
@@ -18,26 +18,14 @@ router.get("/0", (req, res) => {
 
 
 router.get("/1", (req, res) => {
-    res.send("hola");
-});
-
-router.get("/2", (req, res) => {
-    res.send("mundo");
-});
-
-router.get("/3", (req, res) => {
-    res.send("desde el");
-});
-
-router.get("/4", (req, res) => {
-    res.send("servidor");
-});
-
-router.get("/4", (req, res) => {
     res.send("Probando que pasa si hay 2 rutas con el mismo nombre");
 });
 
-router.get("/5", (req, res) => {
+router.get("/1", (req, res) => {
+    res.send("Que pasara?");
+});
+
+router.get("/3", (req, res) => {
     res.send("https://www.youtube.com/watch?v=1vbZMpRTT5M");
 });
 

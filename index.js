@@ -9,7 +9,7 @@ const app = express();
 app.set("port", process.env.PORT || 8080);
 
 //Routes
-app.use(require("./routes/index"));
+app.use(require("./routes/rutas"));
 
 
 //Inciando el server

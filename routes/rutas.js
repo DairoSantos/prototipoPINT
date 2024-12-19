@@ -13,7 +13,7 @@ router.get("/rutaGet", (req, res) => {
 });
 
 router.get("/0", (req, res) => {
-    res.send("Veras que las actulizaciones del server en GITHUB son desde que lo subia ya y es porque no lo habia subido correctamente al principio y me di cuenta tarde, sorry ");
+    res.send("Veras que las actulizaciones del server en GITHUB son desde que lo tenia casi ya hecho y es porque no lo habia subido correctamente al principio y me di cuenta tarde, sorry ");
 });
 
 

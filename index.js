@@ -13,7 +13,7 @@ app.use(require("./routes/index"));
 
 
 //Inciando el server
-app.listen(app.get("port"), function() {
+app.listen(app.get("port"), () => {
     console.log("Hola desde el puerto " + app.get("port"));
 });
 

@@ -24,7 +24,7 @@ router.get("/3", (req, res) => {
     res.send("desde el");
 });
 
-router.get("/3", (req, res) => {
+router.get("/4", (req, res) => {
     res.send("servidor");
 });
 

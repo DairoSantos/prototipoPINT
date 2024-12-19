@@ -12,6 +12,11 @@ router.get("/rutaGet", (req, res) => {
     res.send("hola desde una web llamada en el servidor");
 });
 
+router.get("/0", (req, res) => {
+    res.send("Veras que las actulizaciones del server en GITHUB son desde que lo subia ya y es porque no lo habia subido correctamente al principio y me di cuenta tarde, sorry ");
+});
+
+
 router.get("/1", (req, res) => {
     res.send("hola");
 });
@@ -29,6 +34,11 @@ router.get("/4", (req, res) => {
 });
 
 router.get("/4", (req, res) => {
-    res.send("No se si esto vale como 5 rutas diferentes, pero como no se me ocurria nada mas he hecho esto");
+    res.send("Probando que pasa si hay 2 rutas con el mismo nombre");
 });
+
+router.get("/5", (req, res) => {
+    res.send("https://www.youtube.com/watch?v=1vbZMpRTT5M");
+});
+
 module.exports = router;

@@ -26,7 +26,15 @@ router.get("/1", (req, res) => {
 });
 
 router.get("/3", (req, res) => {
+    console.log("Probando enlaces");
     res.send("https://www.youtube.com/watch?v=1vbZMpRTT5M");
+});
+
+router.get("/4", (req, res) => {
+    console.log("Probando enlace con JSON");
+    res.json({
+        link: "https://www.youtube.com/watch?v=1vbZMpRTT5M"
+    });
 });
 
 module.exports = router;

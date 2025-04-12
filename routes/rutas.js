@@ -21,8 +21,9 @@ router.get("/1", (req, res) => {
     res.send("Probando que pasa si hay 2 rutas con el mismo nombre");
 });
 
-router.get("/1", (req, res) => {
+router.post("/rutapost", (req, res) => {
     res.send("Que pasara?");
+    console.log("He entrado a la post");
 });
 
 router.get("/3", (req, res) => {

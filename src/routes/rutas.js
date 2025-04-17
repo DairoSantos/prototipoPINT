@@ -9,16 +9,9 @@ router.get("/rutaget",  (req,res) => {
     console.log(req.body.nacionalidad);
     console.log(req.body.sexo);
 
-    //res.send("Datos recibidos");
+    res.send("Datos recibidos");
     console.log("He entrado a la post");
-    res.json({
-       nombre: req.body.nombre,
-       apellido: req.body.apellido,
-       edad: req.body.edad,
-       nacionalidad: req.body.nacionalidad,
-       sexo: req.body.sexo,
     
-    })
 });
 
 //Ruta POST

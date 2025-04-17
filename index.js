@@ -1,11 +1,12 @@
-console.log("probando prototipo");
-console.log("instalacion de modulos: express , readline-sync, nodemon -D");
-console.log("Probando nodemon");
+//console.log("probando prototipo");
+//console.log("instalacion de modulos: express , readline-sync, nodemon -D");
+//console.log("Probando nodemon");
 
 
 const express = require("express");
-const morgan = require("morgan");
 const app = express();
+const morgan = require("morgan");
+
 
 //Settings
 app.set("port", process.env.PORT || 8080);

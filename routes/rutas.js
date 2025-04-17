@@ -6,20 +6,7 @@ router.get("/rutaGetConRouter",  (req,res) => {
     res.send("Hola desde una web llamada en el servidor utilizando routes")
 });
 
-
-
-router.get("/rutaGet", (req, res) => {
-    res.send("hola mundo desde el servidor");
-});
-
-//router.get("/0", (req, res) => {
-//    res.send("Veras que las actulizaciones del server en GITHUB son desde que lo tenia casi ya hecho y es porque no lo habia subido correctamente al principio y me di cuenta tarde, sorry ");
-//});
-
-
-//router.get("/1", (req, res) => {
-//    res.send("Probando que pasa si hay 2 rutas con el mismo nombre");
-//});
+//Ruta POST
 
 router.post("/rutapost", (req, res) => {
     console.log(req.body.nombre);

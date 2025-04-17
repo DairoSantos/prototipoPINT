@@ -41,34 +41,6 @@ router.post("/rutapost", (req, res) => {
     //res.redirect("http://localhost:8080/rutapost");
 });
 
-router.post("/rutapost2", (req, res) => {
-    res.send("probando otra ruta");
-    console.log("He entrado a la post");
-});
-router.post("/rutapost3", (req, res) => {
-    res.send("tercera ruta para postman");
-    console.log("He entrado a la post");
-});
-router.post("/rutapost4", (req, res) => {
-    res.send("Probando enlace en POSTMAN");
-    console.log("https://www.youtube.com/watch?v=1vbZMpRTT5M");
-});
-router.post("/POSTCONJSON", (req, res) => {
-    console.log("Probando enlace con JSON");
-    res.json({
-        link: "https://www.youtube.com/watch?v=1vbZMpRTT5M"
-    });
-});
-router.get("/3", (req, res) => {
-    console.log("Probando enlaces");
-    res.send("https://www.youtube.com/watch?v=1vbZMpRTT5M");
-});
 
-router.get("/4", (req, res) => {
-    console.log("Probando enlace con JSON");
-    res.json({
-        link: "https://www.youtube.com/watch?v=1vbZMpRTT5M"
-    });
-});
 
 module.exports = router;

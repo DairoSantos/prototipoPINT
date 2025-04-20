@@ -22,15 +22,15 @@ router.get("/rutaget3", (req, res) => {
     console.log("He entrado a la ruta get");
 });
 
+
 router.get("/rutaget4", (req, res) => {
-    console.log("Probando enlace con JSON");
-    res.json({
-        link: "https://www.youtube.com/watch?v=1vbZMpRTT5M"
-    });
+    console.log("Probando ruta igual");
+    res.send("https://www.youtube.com/watch?v=1vbZMpRTT5M");
     console.log("He entrado a la ruta get");
 });
+
 router.get("/rutaget5", (req, res) => {
-    console.log("Probando ruta igual");
+    console.log("Probando ruta contenido vacio");
     res.send("https://www.youtube.com/watch?v=1vbZMpRTT5M");
     console.log("He entrado a la ruta get");
 });
@@ -57,7 +57,7 @@ router.post("/rutapost", (req, res) => {
     //res.redirect("http://localhost:8080/rutapost");
 });
 router.post("/rutapost2", (req, res) => {
-    console.log(" probando ruta vacia ");
+    console.log(" probando ruta contenido vacio en POST ");
     res.send("");
     console.log("He entrado a la ruta post");
 });
@@ -66,12 +66,13 @@ router.post("/rutapost3", (req, res) => {
     res.send("https://www.youtube.com/watch?v=1vbZMpRTT5M");
     console.log("He entrado a la ruta post");
 });
+
 router.post("/rutapost4", (req, res) => {
-    console.log("Probando enlace con JSON en POST");
-    res.json({
-        link: "https://www.youtube.com/watch?v=1vbZMpRTT5M"
-    });
+    console.log(" probando enlace en POST");
+    res.send("");
+    console.log("He entrado a la ruta post");
 });
+
 
 
 module.exports = router;

@@ -40,7 +40,6 @@ router.get("/getSQL", (req, res) => {
 
 // Ruta POST MySQL
 router.post("/postSQL", (req, res) => {
-    //let post = { usuario: "pruebaNODE", pass: 12345 };
     let post = req.body;
     let sql = "INSERT INTO usuarios SET ?";
     let query = db.query(sql, post, (err, result) => {
